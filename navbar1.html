@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Navbar1</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Playfair+Display&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  	<style type="text/css">
+  		#heroimage{
+  			width:100%;
+  			height: 650px;
+  			opacity: 0.6;
+  			background: url(dryfruit.jpg) repeat-x 0 0;
+  		}
+  		h1{
+  			font-family: 'Montserrat', sans-serif;
+  			border-bottom: 2px solid orange;
+  			padding-bottom: 20px;
+  		}
+  		.box{
+  			width: 100px;
+  			height: 40px;
+  			background-color: gray;
+  			margin: 10px;
+  			display: inline-block;
+  			color: white;
+  			opacity: 0.5;
+  			text-align: center;
+  			font-style: bolder;
+  		}
+  		.box:hover{
+  			opacity: 1;
+  		}
+  		.bord{
+  			margin-top: 10px;
+  			border-bottom: 1px solid lightgray;
+  		}
+  		.block{
+  			width: 190px;
+  			height: 75px;
+  			padding-left: 50px;
+  			display: inline-block;
+  			margin: 10px;
+  			font-size: 30px;
+  			color: white;
+  		}
+  		.iifl{
+  			width: 100px;
+  		}
+  		.tata1{
+  			width: 60px;
+  		}
+  		.microsoft{
+  			padding-bottom: 8px;
+  			width: 50px;
+  		}
+  		.tech{
+  			width: 80px;
+  		}
+  		.sec_block{
+  			width: 250px;
+  			height: 100px;
+  			/*background-color: gray;*/
+  			display: inline-block;
+  			font-size: 50px;
+  			margin: 1px;
+  			font-weight: bolder;
+  			border-right: 1px solid grey;
+
+  		}
+  		.sec_block:last-child{
+  			border-style: none;
+  		}
+  		p{
+  			font-size: 20px;
+  			opacity: 0.8;
+  			font-weight: normal;
+  		}
+  		.back{
+  			font-size: 50px;
+  			font-weight: lighter;
+  		}
+  		.third_block{
+  			width: 250px;
+  			height: 300px;
+  			background-color: darkcyan;
+  			display: inline-block;
+  			margin: 10px;
+  		}
+  		.list-group-item{
+  			background-color: cyan;
+  			list-style: none;
+  			border-style: none;
+  			padding: 5px;
+  		}
+  		.card{
+  			border-style: none;
+  			background-color: cyan;
+  		}
+  		.first_block_header{
+  			font-size: 20px;
+  		}
+  		.exampleInputEmail1{
+  			border-style: none;
+  			/*border-bottom: 1px solid grey;*/
+  		}
+  		#ind_info{
+  			width: 560px;
+  		}
+  		@media (max-width: 800px){
+			.bord{
+				border-style: none;
+				
+			}
+			.block{
+				display: none;
+			}
+			.sec_block{
+				border-style: none;
+			}
+			.card-header{
+				display: flex;
+				/*margin-left: 150px;*/
+				/*flex-direction: column;*/
+				justify-content:center;
+
+			}
+			#ind_info{
+				width: 300px;
+			}
+			/*#services_block{
+				padding-left: 35px;
+			}*/
+			#services_row{
+				padding-left: 25px;
+			}
+			#hero_h1{
+				font-size: 50px;
+			}
+			.collapse{
+				background-color: black;
+				opacity: 0.7;
+				/*position: fixed;*/
+				border-radius: 5px;
+				color: white;
+				font-weight: bold;
+			}
+		}
+ 
+  	</style>
+</head>
+<body>
+	<div id="heroimage">
+	<nav class="navbar navbar-expand-lg fixed-top navbar-light">
+		<a href="#" class="navbar-brand" style="color:white;"><img src="logo_white.png" style="opacity: 1;"></a>
+		<button class="navbar-toggler" data-toggle="collapse" data-target="#coll">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse text-center" id="coll">
+			<div class="navbar-nav ml-auto">
+				<a href="#" class="nav-link active" style="color:white;">Case studies</a>
+				<a href="#" class="nav-link" style="color:white;">Services</a>
+				<a href="#" class="nav-link" style="color:white;">About us</a>
+				<a href="#" class="nav-link" style="color:white;">Careers</a>
+				<a href="#" class="nav-link" style="color:white;">Blog</a>
+				<a href="#" class="nav-link" style="color:white;">Contact us</a>
+			</div>
+		</div>
+	</nav><br><br>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+			<h1 style="color:white; font-size: 75px;" id="hero_h1">Craft<br> Construct<br> Conquer</h1>
+			<h5 style="color:white; font-family: 'Montserrat', sans-serif; margin-left: 8px;">Technology company with proven record of<br>
+				partnering with enterprises and startups</h4>
+				<a href="#"><div class="box">Clutch</div></a>
+				<a href="#"><div class="box">GoodFirm</div></a>
+				<a href="#"><div class="box">PubNub</div></a>
+			</div>
+			
+		</div>
+	</div>
+	<div class="bord"></div>
+	<div class="main_block" style="text-align: center; margin-top: 8px;">
+	<div class="block"><img class="microsoft" src="microsoft1.png">Microsoft</div>
+	<div class="block"><img class="tech" src="techstar.png"></div>
+	<div class="block">Hindware</div>
+	<div class="block"><img class="tata1" src="tata1.png"></div>
+	<div class="block">Cashe</div>
+	<div class="block"><img class="iifl" src="iifl.png"></div>
+	</div>
+	</div>
+	<div class="container">
+	<div class="row">
+		<div class="col-sm-12 text-center" style="margin-top: 50px; margin-bottom: 10px;">
+			<h2 style="font-family: 'Source Sans Pro', sans-serif; font-style:bolder">Why work with Byteridge?</h2>	
+			<h4 style="font-family: 'Montserrat', sans-serif;padding-top: 30px;">We, Byteridge take pride in delivering true value to enterprises and start-ups alike since 2008. Our driven and dedicated team of engineers ensures that Byteridge consistently delivers robust, high quality products, and solutions to our customers. Our ever improving track record is a testimony to this.</h6>
+		</div>
+	</div>
+	<div class="col-sm-12 text-center" style="margin-top:80px">
+	<div class="sec_block">100+<p>Happy Customer</p></div>
+	<div class="sec_block">130+<p>Product and Solution</p></div>
+	<div class="sec_block">10+<p>Years of Existence</p></div>
+	<div class="sec_block">100+<p>Open Source Contribution</p></div>
+	</div>
+	</div>
+	<div class="container-fluid" style="background-color: cyan; margin-top:50px;">
+		<p style="text-align: center; font-size:70px">Services</p>
+		<div class="row" id="services_row" style="margin: 50px 0px 0px 0px">
+			<div class="col-sm-3 text-center" style="margin-bottom: 50px;">
+				<div class="card" style="width: 18rem;" id="services_block">
+					<div class="card-header" style="background-color:cyan; border-style: none;"><img src="1.png"></div>
+  					<ul class="list-group list-group-flush">
+    					<li class="list-group-item"><h3 class="first_block_header">Product Conceptualization</h3></li>
+    					<li class="list-group-item">Idea Validation</li>
+    					<li class="list-group-item">MVP Definition</li>
+   						<li class="list-group-item">Real User Feedback</li>
+  					</ul>
+				</div>
+			</div>
+			<div class="col-sm-3 text-center"style="margin-bottom: 50px;">
+				<div class="card" style="width: 18rem;">
+					<div class="card-header" style="background-color:cyan; border-style: none;"><img src="2.png"></div>
+  					<ul class="list-group list-group-flush">
+    					<li class="list-group-item"><h3 class="first_block_header">Experience Definition</h3></li>
+    					<li class="list-group-item">Storyboarding</li>
+    					<li class="list-group-item">Requirement Definition</li>
+   						<li class="list-group-item">Low Fidelity Designs</li>
+   						<li class="list-group-item">High Fidelity Designs</li>
+   						<li class="list-group-item">Mockups and Prototypes</li>
+  					</ul>
+				</div>
+			</div>
+			
+			<div class="col-sm-3 text-center"style="margin-bottom: 50px;">
+				<div class="card" style="width: 18rem;">
+					<div class="card-header" style="background-color:cyan; border-style: none;"><img src="3.png"></div>
+  					<ul class="list-group list-group-flush">
+    					<li class="list-group-item"><h3 class="first_block_header">Software Development</h3></li>
+    					<li class="list-group-item">iOS , Android</li>
+    					<li class="list-group-item">React Native</li>
+   						<li class="list-group-item">MongoDB, Angular, Node</li>
+   						<li class="list-group-item">ReactJS, Strapi, SignalR</li>
+   						<li class="list-group-item">.NET, MVC</li>
+   						<li class="list-group-item">Machine Learning</li>
+  					</ul>
+				</div>
+			</div>
+
+			<div class="col-sm-3 text-center"style="margin-bottom: 50px;">
+				<div class="card" style="width: 18rem;">
+					<div class="card-header" style="background-color:cyan; border-style: none;"><img src="4.png"></div>
+  					<ul class="list-group list-group-flush">
+    					<li class="list-group-item"><h3 class="first_block_header">Software Verification</h3></li>
+    					<li class="list-group-item">Functional Testing</li>
+    					<li class="list-group-item">Usability Testing</li>
+   						<li class="list-group-item">Security Testing</li>
+   						<li class="list-group-item">Performance Testing</li>
+   						<li class="list-group-item">Continuous Build Integration</li>
+   						
+  					</ul>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container-fluid" style="background-color:rgb(88,199,234)">
+		<div class="container">
+			<div class="heading text-center" style="font-size: 40px; color: white;"> Case Studies</div><br><br>
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="card" style="padding-left: 15px; background-color:rgb(88,199,234)">
+						<div class="card-body" style="background-color:rgb(88,199,234);line-height: 25px;">
+							<p style="font-size: 40px; color: white;">Microsoft</p>
+							<p style="color:white; font-size: 15px;">Ruuh | AI Chatbot | Mobile, Cloud, AI/ML/Bots</p>
+							<br>
+							<p style="color:white; font-family: 'Montserrat', sans-serif;">We helped bring Ruuh - AI based desi chatbot experience to web and mobile. Be it a small talk about cricket or sharing intimate emotions, Ruuh loves it all.</p>
+							<button class="btn btn-primary">View Case Study</button>
+						</div>
+					</div>
+				</div>	
+
+				<div class="col-sm-6">
+					<div class="card">
+						<div class="card-body" style="background-color:rgb(88,199,234);">
+							<img src="case_study.png" style="width:100%">
+						</div>
+					</div>
+				</div>	
+			</div>	
+		</div>
+	</div>
+
+	<div class="container-fluid" style="background-color:#1d3143">
+		<div class="container">
+			<div class="row"style="padding-top:50px">
+				<div class="col-sm-6">
+					<div class="card">
+						<div class="card-body" style="background-color:#1d3143;">
+							<img src="ind_infoline.png" id="ind_info">
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card" style="padding-left: 15px; padding-top: 30px; background-color:#1d3143;">
+						<div class="card-body" style="background-color:#1d3143;line-height: 25px;">
+							<p style="font-size: 35px; color: white;">India Infoline</p>
+							<p style="color:white; font-size: 15px;">IIFL Markets | iOS – iPhone & iPad Apps</p>
+							<br>
+							<p style="color:white; font-family: 'Montserrat', sans-serif;font-size: 16px;">IIFL Markets app we built allows 170k+ user to trade through their phone, get in-depth analysis, expert opinions, track watch lists across NSE, BSE, MCX and NCDEX.</p>
+							<button class="btn btn-primary">View Case Study</button>
+						</div>
+					</div>
+				</div>	
+
+					
+			</div>	
+		</div>
+	</div>
+
+	<div class="container-fluid" style="background-color:#ffc107">
+		<div class="container" style="padding-top:50px">
+			<div class="row">
+				<div class="col-sm-5" style="padding-top:50px; padding-right:20px">
+					<div class="card" style="padding-left: 15px; background-color:#ffc107">
+						<div class="card-body" style="background-color:#ffc107;line-height: 25px;">
+							<p style="font-size: 40px; color: white;">CASHe</p>
+							<p style="color:white; font-size: 15px;">Aeries Technologies | iOS, Android</p>
+							<br>
+							<p style="color:white; font-family: 'Montserrat', sans-serif;">India's first product, providing instant credit to young professionals. Credits worth $60 million extended till date. Solid performance improvement led to better adoption.</p>
+							<button class="btn btn-primary">View Case Study</button>
+						</div>
+					</div>
+				</div>	
+
+				<div class="col-sm-7">
+					<div class="card">
+						<div class="card-body" style="background-color:#ffc107;">
+							<img src="cashe.png" style="width:100%">
+						</div>
+					</div>
+				</div>	
+			</div>	
+		</div>
+	</div>
+	<div class="container-fluid  bg-light">
+		<div class="container bg-light">
+			<div class="heading text-center" style="font-size:40px;padding-bottom: 50px;">Testimonals</div>
+			<div class="row">
+				<div class="col-sm-12">
+					
+					<div class="row">
+						<div class="col-sm-2">
+							<img src="p1.png">
+						</div>
+						<div class="col-sm-4">
+							<strong style="font-size:20px">Brad Wilton</strong>
+							<p>CIO, Valley Proteins, Inc. | Virginia, US</p>
+							<p>They don’t hire just anyone. Byteridge is very quality-conscious and it’s what I appreciate about them. Byteridge pays good attention to detail on all projects. Team is very flexible and capable.</p>
+						</div>
+						<div class="col-sm-2">
+							<img src="p2.png" style="border-radius: 50%;">
+						</div>
+						<div class="col-sm-4">
+							<strong style="font-size:20px">Juhee Ahmed</strong>
+							<p>CIO, Valley Proteins, Inc. | Virginia, US</p>
+							<p>They don’t hire just anyone. Byteridge is very quality-conscious and it’s what I appreciate about them. Byteridge pays good attention to detail on all projects. Team is very flexible and capable.</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-sm-12">
+					
+					<div class="row">
+						<div class="col-sm-2">
+							<img src="p3.png">
+						</div>
+						<div class="col-sm-4">
+							<strong style="font-size:20px">Sachin Somaiya</strong>
+							<p>Manager, Tata Strategic Management Group | Mumbai, India</p>
+							<p>Understanding majority of our requirements, providing alternative routes/ methods, fairly good quality, deliver on timelines (10 on 10 for that!).</p>
+						</div>
+						<div class="col-sm-2">
+							<img src="p4.jpeg" style="border-radius: 50%; width:100px;">
+						</div>
+						<div class="col-sm-4">
+							<strong style="font-size:20px">Ramnath Misra</strong>
+							<p>Head Marketing & Strategy, Hindware | India</p>
+							<p>It was my first experience with app development, and Byteridge made sure everything went smoothly.</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-sm-12">
+					
+					<div class="row">
+						<div class="col-sm-2">
+							<img src="p5.jpeg" style="border-radius:50%; width:100px">
+						</div>
+						<div class="col-sm-4">
+							<strong style="font-size:20px">Kevin Leneway</strong>
+							<p>Engineering Lead, Pioneer Square Labs | Seattle, US</p>
+							<p>Byteridge team maintained an impressive level of expertise, required minimal oversight, and ultimately delivered high-caliber work. Team worked independently and we only got involved at a very high-level.</p>
+						</div>
+						<div class="col-sm-2">
+							<img src="p6.jpeg" style="border-radius: 50%; width:100px">
+						</div>
+						<div class="col-sm-4">
+							<strong style="font-size:20px">Shawn Ovenden</strong>
+							<p>Founder & CEO, Jeppedo | Calgary, Canada</p>
+							<p>They delivered the features and functionalities that we wanted. They were communicative and responsive, completing all of the expected work.</p>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+<div class="container-fluid">
+	<div class="container">
+		<div class="heading text-center" style="font-size:40px; margin: 40px;">Featured Clients</div>
+		<table class="table table-bordered text-center table-responsive-sm">
+		  <tbody>
+		    <tr style="border-top-style: none;">
+		        <td><img src="adp.png"></td> 
+		    	<td><img src="Arre.png"></td> 
+		    	<td><img src="AstarcVentures.png"></td> 
+		    	<td><img src="boat.png"></td> 
+		    	<td><img src="cashe_1.png"></td> 
+		    </tr>
+		    <tr>
+		        <td><img src="chqbook.png"></td> 
+		    	<td><img src="hindware.png"></td> 
+		    	<td><img src="icrisat.png"></td> 
+		    	<td><img src="iifl_1.png"></td> 
+		    	<td><img src="merilytics.png"></td> 
+		    </tr>
+		    <tr>
+		     	<td><img src="microsft.png"></td> 
+		    	<td><img src="Moglix.png"></td> 
+		    	<td><img src="moonfrog.png"></td> 
+		    	<td><img src="philips.png"></td> 
+		    	<td><img src="pinelabs.png"></td> 
+		    </tr>
+		    <tr>
+		     	<td><img src="pramati.png"></td> 
+		    	<td><img src="rapipay.png"></td> 
+		    	<td><img src="tata_1.png"></td> 
+		    	<td><img src="techstars.png"></td> 
+		    	<td><img src="marketboats.png"></td> 
+		    </tr>
+
+		    <tr>
+		     	<td><img src="ibot.png"></td> 
+		    	<td><img src="vp.png"></td> 
+		    	<td><img src="foyr.png"></td> 
+		    	<td><img src="eldahealth.png"></td> 
+		    	<td><img src="Aservices.png"></td> 
+		    </tr>
+		
+		  </tbody>
+		</table>
+	</div>
+</div>
+
+<div class="container-fluid bg-light">
+	<div class="container">
+		<div class="heading text-center" style="font-size:40px;margin: 50px; font-weight: lighter; padding-top: 40px;">Stay In Touch</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<form>
+					<div class="form-group">
+						<input style="border-style:none; border-bottom: 1px solid cyan" type="name" class="form-control" id="exampleInputEmail1" placeholder="Your Name">
+						<input  style="border-style:none;border-bottom: 1px solid cyan" type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
+						<input  style="border-style:none;border-bottom: 1px solid cyan" type="number" class="form-control" id="exampleInputEmail1" placeholder="Your Number">
+						<input  style="border-style:none;border-bottom: 1px solid cyan" type="text" class="form-control" id="exampleInputEmail1" placeholder="Your Message">
+					</div>
+				</form>
+				<button class="btn bg-dark" style="color:orange">Submit</button><br><br>
+			</div>
+			<div class="col-sm-4">
+				<strong>United States</strong><br>
+				<small>1013, Centre Road, Suite 403S,
+						Wilmington, County of New Castle,
+						Delaware, USA - 19805
+				</small><br>
+				<small> +1 415 992 5977</small><br>
+				<small class="text-muted"> info@byteridge.com</small><br><br>
+			</div>
+			<div class="col-sm-4">
+				<strong>India</strong><br>
+				<small>Work Flo, Hitec, 4th Floor,
+						Bizness Square, Opposite Hitex Junction,
+						Madhapur, Telangana - 500084
+				</small><br>
+				<small> +91 40491 74522</small><br>
+				<small class="text-muted"> info@byteridge.com</small>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
